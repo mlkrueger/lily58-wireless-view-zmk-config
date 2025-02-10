@@ -22,11 +22,11 @@
 //                     | CTRL  | ALT  | GUI|  SPACE |  | ENTER | GUI| ALT | CTRL   |
             display-name = "Base";
             bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp MINUS
-&kp EQUAL  &kp Q  &kp W  &kp F    &kp P    &kp G                      &kp J  &kp L    &kp U     &kp Y   &kp SEMI    &kp BSLH
-&kp BSPC &kp A  &kp R  &kp S    &kp T    &kp G                      &kp H  &kp N    &kp E     &kp I   &kp O &kp SQT
-&kp LSHFT &mt LCTRL Z  &kp X  &kp C    &kp V    &mt LGUI B  &mo 2   &kp RGUI &kp K  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                 &kp LALT &kp LGUI &kp SPACE  &kp BSPC  &kp RET  &mo 1  &kp RALT &kp RCTRL
+&kp ESC    &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                                 &kp N6   &kp N7   &kp N8    &kp N9    &kp N0    &kp MINUS
+&kp EQUAL  &kp Q  &kp W  &kp F    &kp P    &kp G                                  &kp J    &kp L    &kp U     &kp Y     &kp SEMI  &kp BSLH
+&kp LSHFT  &kp A  &kp R  &kp S    &kp T    &kp G                                  &kp H    &kp N    &kp E     &kp I     &kp O     &kp SQT
+&kp GRAVE  &mt LCTRL Z   &kp X    &kp C    &kp V   &mt LGUI B  &mo 2     &kp RGUI &kp K    &kp M     &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                                  &kp LALT &kp TAB &kp SPACE  &kp BSPC  &kp RET  &mo 1  &kp RALT &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -42,9 +42,9 @@
             display-name = "Lower";
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans          &trans    &trans    &trans
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9          &kp F10   &kp F11   &kp F12
-&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &trans           &trans            &trans            &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
+&kp F1     &kp F2           &kp F3            &kp LBRC          &kp RBRC       &kp F6                      &kp F7    &kp F8    &kp UP          &kp F10   &kp F11   &kp F12
+&kp GRAVE  &kp EXCL         &kp AT            &kp LPAR          &kp RPAR     &kp PRCNT                    &kp CARET &kp LEFT  &kp DOWN &kp RIGHT  &kp RPAR  &kp TILDE
+&trans     &trans           &trans            &kp LBKT          &kp RBKT     &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
                                               &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
             >;
 
@@ -61,9 +61,9 @@
             display-name = "Raise";
             bindings = <
 &trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
+&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp F1    &kp F2    &kp F3   &kp F4    &trans
+&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &kp F5  &kp F6  &kp F7   &kp F8 &trans
+&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp F9 &kp F10 &kp F11 &kp F12  &kp BSLH
                         &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
             >;
 
