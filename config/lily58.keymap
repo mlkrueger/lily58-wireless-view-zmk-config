@@ -82,5 +82,10 @@
             key-positions = <36 49>;
             bindings = <&kp RG(SPACE)>;
         };
+        combo_esc {
+            timeout-ms = <100>;
+            key-positions = <36 49>;
+            bindings = <&kp RG(RALT(RCTRL(SPACE)))>;
+        };
 };
 };
